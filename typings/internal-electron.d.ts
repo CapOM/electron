@@ -227,6 +227,7 @@ declare namespace ElectronInternal {
     startHandling(captureWindow: boolean, captureScreen: boolean, thumbnailSize: Electron.Size, fetchWindowIcons: boolean): void;
     _onerror?: (error: string) => void;
     _onfinished?: (sources: Electron.DesktopCapturerSource[], fetchWindowIcons: boolean) => void;
+    setSkipCursor(sourceId: string, skipCursor: boolean): void;
   }
 
   interface GetSourcesOptions {
